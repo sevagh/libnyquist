@@ -249,6 +249,8 @@ install(EXPORT libnyquist
 message(STATUS "CMAKE_INSTALL_INCLUDEDIR: ${CMAKE_INSTALL_INCLUDEDIR}")
 
 # todo, install the headers
+install(DIRECTORY ${LIBNYQUIST_ROOT}/include/libnyquist
+        DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
 
 # export the targets for use when libnyquist is included as a subproject
 export(TARGETS libnyquist
